@@ -1,5 +1,5 @@
 {
-  "name": "netkingcode/vue-dynamic-forms",
+  "name": "@netkingcode/vue-dynamic-forms",
   "version": "0.0.0-development",
   "description": "fork from @asigloo/vue-dynamic-forms 0.4.6, Easy way to dynamically create reactive forms in vue based on varying business object model",
   "author": "Alvaro Saburido <alvaro.saburido@gmail.com>",
