@@ -1,5 +1,12 @@
 <template>
   <div :class="getClasses">
+    <label
+      class="form-label"
+      :for="formControl.name"
+      v-if="formControl.type !== 'checkbox'"
+    >
+      {{ formControl.label }}
+    </label>
     <input-text
       v-if="
         formControl.type === 'text' ||
@@ -39,13 +46,6 @@
       :onFocus="onFocus"
       :onBlur="onBlur"
     />
-    <label
-      class="form-label"
-      :for="formControl.name"
-      v-if="formControl.type !== 'checkbox'"
-    >
-      {{ formControl.label }}
-    </label>
     <span class="form-bar"></span>
     <p class="form-hint" v-if="formControl.helper">
       {{ formControl.helper }}
